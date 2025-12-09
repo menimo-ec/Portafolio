@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría – Extras</title>
+    <link rel="stylesheet" href="css/categorias.css">
+    <link rel="stylesheet" href="css/estilos.css">   
+</head>
+
+<body class="fade-in">
+
+<header class="header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="img/Logo.svg" alt="Logo" class="logo-img">
+        </a>
+
+        <!-- Menú hamburguesa -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger-icon">
+            <span></span><span></span><span></span>
+        </label>
+
+        <ul class="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca.html">Sobre mi</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="categoria-container fade-content">
+
+    <h1 class="categoria-titulo">Extras</h1>
+    <p class="categoria-subtitulo">Proyectos experimentales y trabajos complementarios</p>
+
+    <section class="grid-masonry">
+
+        <div class="proyecto-card borde-categoria-1" 
+             data-gallery='[
+             "img/extras/prodigo/1.png",
+             "img/extras/prodigo/2.png",
+             "img/extras/prodigo/3.mp4"]'
+            data-title="Pródigo"
+            data-description="Diseño de merch."
+            data-role="Mi rol: Diseño gráfico">
+            <img src="img/extras/prodigo/1.png" loading="lazy">
+            <h3>Conferencia Oasis: Pródigo</h3>
+        </div>
+
+        <div class="proyecto-card borde-categoria-2"
+             data-gallery='[
+             "img/extras/TDSG/1.png"]'
+            data-title="Campamento: Transportadores de Su gloria"
+            data-description="Diseño de merch."
+            data-role="Mi rol: Diseño gráfico">
+            <img src="img/extras/TDSG/1.png" loading="lazy">
+            <h3>Campamento: Transportadores de Su gloria</h3>
+        </div>
+
+        <div class="proyecto-card borde-categoria-3"
+             data-gallery='[
+             "img/extras/arttoy/1.png", 
+             "img/extras/arttoy/2.png", 
+             "img/extras/arttoy/3.png", 
+             "img/extras/arttoy/4.png",
+             "img/extras/arttoy/5.png",
+             "img/extras/arttoy/6.png",
+             "img/extras/arttoy/7.png",
+             "img/extras/arttoy/8.png"]'
+            data-title="Art Toy: Rudy"
+            data-description="Modelado 3D."
+            data-role="Mi rol: Conceptualización, modelado 3D y diseño gráfico">
+            <img src="img/extras/arttoy/1.png" loading="lazy">
+            <h3>Art Toy: Rudy</h3>
+        </div>
+
+        <div class="proyecto-card borde-categoria-4"
+             data-gallery='[
+             "img/extras/periodico/1.png"]'
+            data-title="Periódico Jazzeado"
+            data-description="Diseño de portada."
+            data-role="Mi rol: Diseño gráfico">
+            <img src="img/extras/periodico/1.png" loading="lazy">
+            <h3>Periodico Jazzeado</h3>
+        </div>
+
+    </section>
+
+    <a href="proyectos.html" class="button">Regresar</a>
+
+</main>
+
+<footer class="footer">
+    <p>© 2025 Menimo – Fernanda Olguín</p>
+</footer>
+
+<div id="carouselModal">
+    <div class="carousel-content">
+
+        <span class="carousel-close">&times;</span>
+
+        <div class="carousel-images">
+            <span class="carousel-arrow left">&#10094;</span>
+            <span class="carousel-arrow right">&#10095;</span>
+        </div>
+
+        <div class="carousel-info">
+            <h2 id="carouselTitle"></h2>
+            <p id="carouselDescription"></p>
+            <p id="carouselRole"></p>
+        </div>
+
+        <div class="carousel-thumbnails"></div>
+
+    </div>
+</div>
+
+<script src="js/transitions.js" defer></script>
+<script src="js/gallery.js" defer></script>
+
+</body>
+</html>

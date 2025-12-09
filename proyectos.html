@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Menimo — Categorías de Proyectos</title>
+
+    <!-- Tipografía Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tus estilos globales -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Estilos específicos de proyectos -->
+    <link rel="stylesheet" href="css/proyectos.css">
+</head>
+
+<body class="fade-in">
+<header>
+    <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html" class="logo-link" aria-label="Inicio - Menimo">
+            <img src="img/Logo.svg" alt="Menimo logo" class="logo">
+        </a>
+
+        <!-- (Si usas el checkbox toggle en index, aquí puedes mantener la misma estructura) -->
+        <label for="menu-toggle" class="menu-btn" aria-hidden="true">☰</label>
+        <input type="checkbox" id="menu-toggle" />
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca.html">Sobre mi</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="projects-hero" aria-labelledby="projects-title">
+        <h1 id="projects-title">Proyectos</h1>
+        <p>Explora las categorías.</p>
+        <p class="lead">Haz clic en una tarjeta para ver los proyectos.</p>
+    </section>
+
+    <!-- GRID MASONRY -->
+    <section class="categories" aria-label="Categorías de proyectos">
+
+        <!-- Categoría 1 -->
+        <article class="category-card" role="link" tabindex="0" data-href="redes.html" aria-labelledby="c1-title">
+            <figure class="card-media">
+                <!-- Sustituye por tu imagen: proporciones variadas OK -->
+                <img src="img/categorias/redes.png" alt="Redes Sociales — ejemplo" loading="lazy"/>
+                <figcaption class="visually-hidden">Redes Sociales</figcaption>
+            </figure>
+
+            <div class="card-overlay">
+                <hgroup>
+                    <h2 id="c1-title">Redes Sociales</h2>
+                    <p class="card-sub">Diseño y contenido para plataformas digitales</p>
+                </hgroup>
+            </div>
+        </article>
+
+        <!-- Categoría 2 -->
+        <article class="category-card" role="link" tabindex="0" data-href="branding.html" aria-labelledby="c2-title">
+            <figure class="card-media">
+                <img src="img/categorias/branding.png" alt="Branding — ejemplo" loading="lazy"/>
+                <figcaption class="visually-hidden">Branding</figcaption>
+            </figure>
+
+            <div class="card-overlay">
+                <hgroup>
+                    <h2 id="c2-title">Branding</h2>
+                    <p class="card-sub">Identidad visual y construcción de marca</p>
+                </hgroup>
+            </div>
+        </article>
+
+        <!-- Categoría 3 -->
+        <article class="category-card" role="link" tabindex="0" data-href="fotos.html" aria-labelledby="c3-title">
+            <figure class="card-media">
+                <img src="img/categorias/fotos.png" alt="Fotografías — ejemplo" loading="lazy"/>
+                <figcaption class="visually-hidden">Fotografías</figcaption>
+            </figure>
+
+            <div class="card-overlay">
+                <hgroup>
+                    <h2 id="c3-title">Fotografías</h2>
+                    <p class="card-sub">Composición visual y narrativa por medio de imagen</p>
+                </hgroup>
+            </div>
+        </article>
+
+        <!-- Categoría 4 -->
+        <article class="category-card" role="link" tabindex="0" data-href="cartel.html" aria-labelledby="c4-title">
+            <figure class="card-media">
+                <img src="img/categorias/cartel.png" alt="Cartel — ejemplo" loading="lazy"/>
+                <figcaption class="visually-hidden">Cartel</figcaption>
+            </figure>
+
+            <div class="card-overlay">
+                <hgroup>
+                    <h2 id="c4-title">Cartel</h2>
+                    <p class="card-sub">Diseño gráfico aplicado a mensajes visuales</p>
+                </hgroup>
+            </div>
+        </article>
+
+        <!-- Categoría 5 -->
+        <article class="category-card" role="link" tabindex="0" data-href="extras.html" aria-labelledby="c5-title">
+            <figure class="card-media">
+                <img src="img/categorias/extras.png" alt="Extras — ejemplo" loading="lazy"/>
+                <figcaption class="visually-hidden">Extras</figcaption>
+            </figure>
+
+            <div class="card-overlay">
+                <hgroup>
+                    <h2 id="c5-title">Extras</h2>
+                    <p class="card-sub">Proyectos experimentales y trabajos complementarios</p>
+                </hgroup>
+            </div>
+        </article>
+
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Menimo – Fernanda Olguín</p>
+</footer>
+
+<!-- Script: hace cada tarjeta "clickeable" y accesible por teclado -->
+<script src="js/main.js"></script>
+<script src="js/transitions.js"></script>
+
+</body>
+
+</html>

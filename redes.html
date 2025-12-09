@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría – Redes</title>
+    <link rel="stylesheet" href="css/categorias.css">
+    <link rel="stylesheet" href="css/estilos.css">   
+</head>
+
+<body class="fade-in">
+
+<header class="header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="img/Logo.svg" alt="Logo" class="logo-img">
+        </a>
+
+        <!-- Menú hamburguesa -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger-icon">
+            <span></span><span></span><span></span>
+        </label>
+
+        <ul class="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca.html">Sobre mi</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="categoria-container fade-content">
+
+    <h1 class="categoria-titulo">Redes sociales</h1>
+    <p class="categoria-subtitulo">Diseño y contenido para plataformas digitales</p>
+
+    <section class="grid-masonry">
+
+        <div class="proyecto-card borde-categoria-1" 
+             data-gallery='[
+             "img/redes/TDSG/Mockup-1.png",
+             "img/redes/TDSG/Mockup-2.png",
+             "img/redes/TDSG/Mockup-3.png",
+             "img/redes/TDSG/Mockup-4.png"]'
+            data-title="Campamento: Transportadores de Su gloria"
+            data-description="Diseño de contenido visual para campamento juvenil, incluyendo piezas para redes y carruseles informativos."
+            data-role="Mi rol: Diseño gráfico y dirección creativa">
+            <img src="img/redes/TDSG/Mockup-1.png" loading="lazy">
+            <h3>Campamento: Transportadores de Su gloria</h3>
+        </div>
+
+        <div class="proyecto-card borde-categoria-2"
+             data-gallery='[
+             "img/redes/DDA/1.png", 
+             "img/redes/DDA/2.png", 
+             "img/redes/DDA/3.png"]'
+            data-title="Día del amigo"
+            data-description="Diseño de carrusel documental del evento."
+            data-role="Mi rol: Diseño gráfico">
+            <img src="img/redes/DDA/1.png" loading="lazy">
+            <h3>Día del amigo</h3>
+        </div>
+
+        <div class="proyecto-card borde-categoria-3"
+             data-gallery='[
+             "img/redes/EBV/Mockup-1.png", 
+             "img/redes/EBV/Mockup-2.png", 
+             "img/redes/EBV/Mockup-3.png", 
+             "img/redes/EBV/Mockup-4.png"]'
+            data-title="Escuela Bíblica de Verano"
+            data-description="Diseño de contenido visual para los 3 días, incluyendo piezas para redes y carruseles informativos."
+            data-role="Mi rol: Diseño gráfico y dirección creativa">
+            <img src="img/redes/EBV/Mockup-1.png" loading="lazy">
+            <h3>Escuela Bíblica de Verano</h3>
+        </div>
+
+        <div class="proyecto-card borde-categoria-4"
+             data-gallery='[
+             "img/redes/Jornada/1.png", 
+             "img/redes/Jornada/2.png", 
+             "img/redes/Jornada/3.png"]'
+            data-title="Jornada académica Sinapsis: Conectando Ideas"
+            data-description="Diseño de contenido visual para la  jornada, incluyendo piezas para redes, carruseles documentales y edición de video."
+            data-role="Mi rol: Diseño gráfico y dirección creativa">
+            <img src="img/redes/Jornada/1.png" loading="lazy">
+            <h3>Jornada académica "Sinapsis: Conectando Ideas"</h3>
+        </div>
+
+    </section>
+
+    <a href="proyectos.html" class="button">Regresar</a>
+
+</main>
+
+<footer class="footer">
+    <p>© 2025 Menimo – Fernanda Olguín</p>
+</footer>
+
+<div id="carouselModal">
+    <div class="carousel-content">
+
+        <span class="carousel-close">&times;</span>
+
+        <div class="carousel-images">
+            <span class="carousel-arrow left">&#10094;</span>
+            <span class="carousel-arrow right">&#10095;</span>
+        </div>
+
+        <div class="carousel-info">
+            <h2 id="carouselTitle"></h2>
+            <p id="carouselDescription"></p>
+            <p id="carouselRole"></p>
+        </div>
+
+        <div class="carousel-thumbnails"></div>
+
+    </div>
+</div>
+
+<script src="js/transitions.js" defer></script>
+<script src="js/gallery.js" defer></script>
+
+</body>
+</html>

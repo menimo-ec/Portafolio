@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría – Fotografía</title>
+    <link rel="stylesheet" href="css/categorias.css">
+    <link rel="stylesheet" href="css/estilos.css">   
+</head>
+
+<body class="fade-in">
+
+<header class="header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="img/Logo.svg" alt="Logo" class="logo-img">
+        </a>
+
+        <!-- Menú hamburguesa -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger-icon">
+            <span></span><span></span><span></span>
+        </label>
+
+        <ul class="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca.html">Sobre mi</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="categoria-container fade-content">
+
+    <h1 class="categoria-titulo">Fotografía</h1>
+    <p class="categoria-subtitulo">Composición visual y narrativa por medio de imagen</p>
+
+    <section class="grid-masonry">
+
+        <div class="proyecto-card borde-categoria-1" 
+             data-gallery='[
+             "img/fotos/basquet/1.jpg",
+             "img/fotos/basquet/2.jpg",
+             "img/fotos/basquet/3.jpg",
+             "img/fotos/basquet/4.jpg",
+             "img/fotos/basquet/5.jpg", 
+             "img/fotos/basquet/6.jpg", 
+             "img/fotos/basquet/7.jpg"]'
+            data-title="Torneo de Lencho"
+            data-description="Torneo de basquetbol en la ciudad de Guasave, Sinaloa."
+            data-role="Mi rol: Toma de fotografías y edición">
+            <img src="img/fotos/basquet/1.jpg" loading="lazy">
+            <h3>Torneo de Lencho</h3>
+        </div>
+
+        <div class="proyecto-card borde-categoria-2"
+             data-gallery='[
+             "img/fotos/caballa/1.jpg", 
+             "img/fotos/caballa/2.jpg", 
+             "img/fotos/caballa/3.jpg",
+             "img/fotos/caballa/4.jpg",
+             "img/fotos/caballa/5.jpg",
+             "img/fotos/caballa/6.jpg",
+             "img/fotos/caballa/7.jpg",
+             "img/fotos/caballa/8.jpg"]'
+            data-title="Caballa Nikkei"
+            data-description="Fotografía de producto al mobiliario fabricado por Tapicería La Roca."
+            data-role="Mi rol: Toma de fotografías y edición">
+            <img src="img/fotos/caballa/1.jpg" loading="lazy">
+            <h3>Caballa Nikkei</h3>
+        </div>
+
+        <div class="proyecto-card borde-categoria-3"
+             data-gallery='[
+             "img/fotos/jornada/1.jpg", 
+             "img/fotos/jornada/2.jpg", 
+             "img/fotos/jornada/3.jpg", 
+             "img/fotos/jornada/4.jpg",
+             "img/fotos/jornada/5.jpg",
+             "img/fotos/jornada/6.jpg",
+             "img/fotos/jornada/7.jpg",
+             "img/fotos/jornada/8.jpg",
+             "img/fotos/jornada/9.jpg"]'
+            data-title="Sinapsis: Conectando Ideas"
+            data-description="Rally de inauguración de jornada."
+            data-role="Mi rol: Toma de fotografías y edición">
+            <img src="img/fotos/jornada/1.jpg" loading="lazy">
+            <h3>Jornada académica "Sipasis: Conectando Ideas"</h3>
+        </div>
+
+        <div class="proyecto-card borde-categoria-4"
+             data-gallery='[
+             "img/fotos/sesion/1.jpg", 
+             "img/fotos/sesion/2.jpg", 
+             "img/fotos/sesion/3.jpg",
+             "img/fotos/sesion/4.jpg",
+             "img/fotos/sesion/5.jpg",
+             "img/fotos/sesion/6.jpg"]'
+            data-title="Sesión de cumpleaños #40"
+            data-description="Seion de cumpleaños para Nohemi Quiñónez."
+            data-role="Mi rol: Toma de fotografías y edición">
+            <img src="img/fotos/sesion/1.jpg" loading="lazy">
+            <h3>Sesión de cumpleaños #40</h3>
+        </div>
+
+    </section>
+
+    <a href="proyectos.html" class="button">Regresar</a>
+
+</main>
+
+<footer class="footer">
+    <p>© 2025 Menimo – Fernanda Olguín</p>
+</footer>
+
+<div id="carouselModal">
+    <div class="carousel-content">
+
+        <span class="carousel-close">&times;</span>
+
+        <div class="carousel-images">
+            <span class="carousel-arrow left">&#10094;</span>
+            <span class="carousel-arrow right">&#10095;</span>
+        </div>
+
+        <div class="carousel-info">
+            <h2 id="carouselTitle"></h2>
+            <p id="carouselDescription"></p>
+            <p id="carouselRole"></p>
+        </div>
+
+        <div class="carousel-thumbnails"></div>
+
+    </div>
+</div>
+
+<script src="js/transitions.js" defer></script>
+<script src="js/gallery.js" defer></script>
+
+</body>
+</html>
